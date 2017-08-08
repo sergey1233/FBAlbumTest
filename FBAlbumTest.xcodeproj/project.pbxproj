@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C91ED97040FD5BAB9E7CE28B /* Pods_FBAlbumTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E49FED912131EAC6F0067835 /* Pods_FBAlbumTest.framework */; };
+		CA727E281F345B4600660597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA727E271F345B4600660597 /* AppDelegate.swift */; };
+		CA727E2A1F345B4600660597 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA727E291F345B4600660597 /* LoginViewController.swift */; };
+		CA727E2D1F345B4600660597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA727E2B1F345B4600660597 /* Main.storyboard */; };
+		CA727E2F1F345B4600660597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA727E2E1F345B4600660597 /* Assets.xcassets */; };
+		CA727E321F345B4600660597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA727E301F345B4600660597 /* LaunchScreen.storyboard */; };
+		CAE1A8971F38549300785BEF /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1A8961F38549300785BEF /* Picture.swift */; };
+		CAE1A8991F3854DF00785BEF /* FBAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1A8981F3854DF00785BEF /* FBAlbum.swift */; };
+		CAE1A89B1F3855F600785BEF /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1A89A1F3855F600785BEF /* GlobalVariables.swift */; };
+		CAE1A89D1F385FEF00785BEF /* AlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1A89C1F385FEF00785BEF /* AlbumsTableViewController.swift */; };
+		CAE1A89F1F38C04100785BEF /* PhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1A89E1F38C04100785BEF /* PhotosTableViewController.swift */; };
+		CAE1A8A21F38CD3C00785BEF /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1A8A11F38CD3C00785BEF /* AlbumCell.swift */; };
+		CAE1A8A41F38D06500785BEF /* CurrentPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1A8A31F38D06500785BEF /* CurrentPhotoViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		231DB61987C7165575F2D19A /* Pods-FBAlbumTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBAlbumTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FBAlbumTest/Pods-FBAlbumTest.debug.xcconfig"; sourceTree = "<group>"; };
+		78BD0D66F1DFA4795BC853E3 /* Pods-FBAlbumTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBAlbumTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-FBAlbumTest/Pods-FBAlbumTest.release.xcconfig"; sourceTree = "<group>"; };
+		CA727E241F345B4600660597 /* FBAlbumTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBAlbumTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA727E271F345B4600660597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA727E291F345B4600660597 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CA727E2C1F345B4600660597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA727E2E1F345B4600660597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA727E311F345B4600660597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA727E331F345B4600660597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CABD1ED51F35DFEA001780DC /* FBAlbumTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FBAlbumTest.entitlements; sourceTree = "<group>"; };
+		CAE1A8961F38549300785BEF /* Picture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		CAE1A8981F3854DF00785BEF /* FBAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBAlbum.swift; sourceTree = "<group>"; };
+		CAE1A89A1F3855F600785BEF /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		CAE1A89C1F385FEF00785BEF /* AlbumsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewController.swift; sourceTree = "<group>"; };
+		CAE1A89E1F38C04100785BEF /* PhotosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosTableViewController.swift; sourceTree = "<group>"; };
+		CAE1A8A11F38CD3C00785BEF /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		CAE1A8A31F38D06500785BEF /* CurrentPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentPhotoViewController.swift; sourceTree = "<group>"; };
+		E49FED912131EAC6F0067835 /* Pods_FBAlbumTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBAlbumTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA727E211F345B4600660597 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91ED97040FD5BAB9E7CE28B /* Pods_FBAlbumTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		376D8E682DED138B504F924C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E49FED912131EAC6F0067835 /* Pods_FBAlbumTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AFDD6D9FFFABC79B2021101 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				231DB61987C7165575F2D19A /* Pods-FBAlbumTest.debug.xcconfig */,
+				78BD0D66F1DFA4795BC853E3 /* Pods-FBAlbumTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA727E1B1F345B4600660597 = {
+			isa = PBXGroup;
+			children = (
+				CA727E261F345B4600660597 /* FBAlbumTest */,
+				CA727E251F345B4600660597 /* Products */,
+				7AFDD6D9FFFABC79B2021101 /* Pods */,
+				376D8E682DED138B504F924C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CA727E251F345B4600660597 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA727E241F345B4600660597 /* FBAlbumTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA727E261F345B4600660597 /* FBAlbumTest */ = {
+			isa = PBXGroup;
+			children = (
+				CAE1A8A01F38CD1E00785BEF /* ui */,
+				CAE1A8951F38547C00785BEF /* model */,
+				CAE1A8941F38547100785BEF /* controllers */,
+				CABD1ED51F35DFEA001780DC /* FBAlbumTest.entitlements */,
+				CA727E271F345B4600660597 /* AppDelegate.swift */,
+				CA727E2B1F345B4600660597 /* Main.storyboard */,
+				CA727E2E1F345B4600660597 /* Assets.xcassets */,
+				CA727E301F345B4600660597 /* LaunchScreen.storyboard */,
+				CA727E331F345B4600660597 /* Info.plist */,
+			);
+			path = FBAlbumTest;
+			sourceTree = "<group>";
+		};
+		CAE1A8941F38547100785BEF /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA727E291F345B4600660597 /* LoginViewController.swift */,
+				CAE1A89C1F385FEF00785BEF /* AlbumsTableViewController.swift */,
+				CAE1A89E1F38C04100785BEF /* PhotosTableViewController.swift */,
+				CAE1A8A31F38D06500785BEF /* CurrentPhotoViewController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		CAE1A8951F38547C00785BEF /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CAE1A8961F38549300785BEF /* Picture.swift */,
+				CAE1A8981F3854DF00785BEF /* FBAlbum.swift */,
+				CAE1A89A1F3855F600785BEF /* GlobalVariables.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		CAE1A8A01F38CD1E00785BEF /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				CAE1A8A11F38CD3C00785BEF /* AlbumCell.swift */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA727E231F345B4600660597 /* FBAlbumTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA727E361F345B4600660597 /* Build configuration list for PBXNativeTarget "FBAlbumTest" */;
+			buildPhases = (
+				419B1820E156F62D2C4956F0 /* [CP] Check Pods Manifest.lock */,
+				CA727E201F345B4600660597 /* Sources */,
+				CA727E211F345B4600660597 /* Frameworks */,
+				CA727E221F345B4600660597 /* Resources */,
+				4DC672752EF23906A5DB5731 /* [CP] Embed Pods Frameworks */,
+				1B04597771D1580C833244CC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBAlbumTest;
+			productName = FBAlbumTest;
+			productReference = CA727E241F345B4600660597 /* FBAlbumTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA727E1C1F345B4600660597 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = FinApp;
+				TargetAttributes = {
+					CA727E231F345B4600660597 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 877UC55YS4;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = CA727E1F1F345B4600660597 /* Build configuration list for PBXProject "FBAlbumTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA727E1B1F345B4600660597;
+			productRefGroup = CA727E251F345B4600660597 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA727E231F345B4600660597 /* FBAlbumTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA727E221F345B4600660597 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA727E321F345B4600660597 /* LaunchScreen.storyboard in Resources */,
+				CA727E2F1F345B4600660597 /* Assets.xcassets in Resources */,
+				CA727E2D1F345B4600660597 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B04597771D1580C833244CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FBAlbumTest/Pods-FBAlbumTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		419B1820E156F62D2C4956F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4DC672752EF23906A5DB5731 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FBAlbumTest/Pods-FBAlbumTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA727E201F345B4600660597 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE1A8971F38549300785BEF /* Picture.swift in Sources */,
+				CAE1A89D1F385FEF00785BEF /* AlbumsTableViewController.swift in Sources */,
+				CAE1A8991F3854DF00785BEF /* FBAlbum.swift in Sources */,
+				CAE1A8A21F38CD3C00785BEF /* AlbumCell.swift in Sources */,
+				CA727E2A1F345B4600660597 /* LoginViewController.swift in Sources */,
+				CA727E281F345B4600660597 /* AppDelegate.swift in Sources */,
+				CAE1A89B1F3855F600785BEF /* GlobalVariables.swift in Sources */,
+				CAE1A89F1F38C04100785BEF /* PhotosTableViewController.swift in Sources */,
+				CAE1A8A41F38D06500785BEF /* CurrentPhotoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA727E2B1F345B4600660597 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA727E2C1F345B4600660597 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA727E301F345B4600660597 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA727E311F345B4600660597 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA727E341F345B4600660597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA727E351F345B4600660597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA727E371F345B4600660597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 231DB61987C7165575F2D19A /* Pods-FBAlbumTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FBAlbumTest/FBAlbumTest.entitlements;
+				DEVELOPMENT_TEAM = 877UC55YS4;
+				INFOPLIST_FILE = FBAlbumTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.finapp.FBAlbumTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CA727E381F345B4600660597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78BD0D66F1DFA4795BC853E3 /* Pods-FBAlbumTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FBAlbumTest/FBAlbumTest.entitlements;
+				DEVELOPMENT_TEAM = 877UC55YS4;
+				INFOPLIST_FILE = FBAlbumTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.finapp.FBAlbumTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA727E1F1F345B4600660597 /* Build configuration list for PBXProject "FBAlbumTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA727E341F345B4600660597 /* Debug */,
+				CA727E351F345B4600660597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA727E361F345B4600660597 /* Build configuration list for PBXNativeTarget "FBAlbumTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA727E371F345B4600660597 /* Debug */,
+				CA727E381F345B4600660597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA727E1C1F345B4600660597 /* Project object */;
+}
