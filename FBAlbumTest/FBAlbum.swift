@@ -1,8 +1,8 @@
 import UIKit
 
 class FBAlbum: NSObject {
-    var id = ""
-    var name = ""
+    var id: String = ""
+    var name: String = ""
     var coverPhoto = Picture()
     var photos = [Picture()]
     
@@ -10,9 +10,9 @@ class FBAlbum: NSObject {
         super.init()
     }
     
-    init(id: String, name: String, coverPhoto: Picture, photos: [Picture]) {
-        self.id = id
-        self.name = name
+    init(id: String?, name: String?, coverPhoto: Picture = Picture(), photos: [Picture] = []) {
+        self.id = id ?? ""
+        self.name = name ?? "empty"
         self.coverPhoto = coverPhoto
         self.photos = photos
     }

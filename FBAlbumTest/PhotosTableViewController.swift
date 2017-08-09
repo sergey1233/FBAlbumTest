@@ -11,15 +11,6 @@ class PhotosTableViewController: UITableViewController {
         super.viewDidLoad()
         
         navigationItem.title = "Photos"
-        
-        for photo in photos {
-            Alamofire.request(photo.urlString).responseImage { response in
-                if let imageResponse = response.result.value {
-                    self.photoData[photo.id] = imageResponse
-                    self.tableView.reloadData()
-                }
-            }
-        }
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -38,17 +29,43 @@ class PhotosTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "photoCell", for: indexPath)
         let photo = photos[(indexPath as NSIndexPath).row]
         
-        let size = CGSize(width: 60.0, height: 60.0)
-        cell.imageView?.image = photoData[photo.id]?.af_imageAspectScaled(toFill: size)
+        getPhoto(cell: cell, photo: photo)
         
         return cell
+    }
+    
+    func getPhoto(cell: UITableViewCell, photo: Picture) {
+        let size = CGSize(width: 60.0, height: 60.0)
+        
+        let id = photo.id
+        if !id.isEmpty {
+            if !photoData.keys.contains(id) {
+                let url = photo.urlString
+                if !url.isEmpty {
+                    Alamofire.request(url).responseImage { response in
+                        if let imageResponse = response.result.value {
+                            self.photoData[id] = imageResponse
+                            cell.imageView?.image = imageResponse.af_imageAspectScaled(toFill: size)
+                            cell.setNeedsLayout()
+                        }
+                    }
+                }
+            }
+            else {
+                cell.imageView?.image = self.photoData[id]?.af_imageAspectScaled(toFill: size)
+                cell.setNeedsLayout()
+            }
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "showBigPhoto") {
             let currentPhotoViewController = segue.destination as! CurrentPhotoViewController
             if let indexPath = tableView.indexPathForSelectedRow {
-                currentPhotoViewController.picture = photoData[photos[(indexPath as NSIndexPath).row].id]!
+                let id = photos[(indexPath as NSIndexPath).row].id
+                if !id.isEmpty {
+                    currentPhotoViewController.picture = photoData[id] ?? UIImage()
+                }
             }
         }
     }

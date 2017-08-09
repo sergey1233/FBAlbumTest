@@ -3,7 +3,6 @@ import UIKit
 class CurrentPhotoViewController: UIViewController {
 
     @IBOutlet weak var photo: UIImageView!
-    
     var picture: UIImage = UIImage()
     
     override func viewDidLoad() {

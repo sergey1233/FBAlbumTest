@@ -15,11 +15,11 @@
 		CA727E321F345B4600660597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA727E301F345B4600660597 /* LaunchScreen.storyboard */; };
 		CAE1A8971F38549300785BEF /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1A8961F38549300785BEF /* Picture.swift */; };
 		CAE1A8991F3854DF00785BEF /* FBAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1A8981F3854DF00785BEF /* FBAlbum.swift */; };
-		CAE1A89B1F3855F600785BEF /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1A89A1F3855F600785BEF /* GlobalVariables.swift */; };
 		CAE1A89D1F385FEF00785BEF /* AlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1A89C1F385FEF00785BEF /* AlbumsTableViewController.swift */; };
 		CAE1A89F1F38C04100785BEF /* PhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1A89E1F38C04100785BEF /* PhotosTableViewController.swift */; };
 		CAE1A8A21F38CD3C00785BEF /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1A8A11F38CD3C00785BEF /* AlbumCell.swift */; };
 		CAE1A8A41F38D06500785BEF /* CurrentPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1A8A31F38D06500785BEF /* CurrentPhotoViewController.swift */; };
+		CAE1A8A61F3AEF4700785BEF /* ParseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1A8A51F3AEF4700785BEF /* ParseData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,11 +35,11 @@
 		CABD1ED51F35DFEA001780DC /* FBAlbumTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FBAlbumTest.entitlements; sourceTree = "<group>"; };
 		CAE1A8961F38549300785BEF /* Picture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
 		CAE1A8981F3854DF00785BEF /* FBAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBAlbum.swift; sourceTree = "<group>"; };
-		CAE1A89A1F3855F600785BEF /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		CAE1A89C1F385FEF00785BEF /* AlbumsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewController.swift; sourceTree = "<group>"; };
 		CAE1A89E1F38C04100785BEF /* PhotosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosTableViewController.swift; sourceTree = "<group>"; };
 		CAE1A8A11F38CD3C00785BEF /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		CAE1A8A31F38D06500785BEF /* CurrentPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentPhotoViewController.swift; sourceTree = "<group>"; };
+		CAE1A8A51F3AEF4700785BEF /* ParseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseData.swift; sourceTree = "<group>"; };
 		E49FED912131EAC6F0067835 /* Pods_FBAlbumTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBAlbumTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -122,7 +122,7 @@
 			children = (
 				CAE1A8961F38549300785BEF /* Picture.swift */,
 				CAE1A8981F3854DF00785BEF /* FBAlbum.swift */,
-				CAE1A89A1F3855F600785BEF /* GlobalVariables.swift */,
+				CAE1A8A51F3AEF4700785BEF /* ParseData.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -267,10 +267,10 @@
 				CAE1A8971F38549300785BEF /* Picture.swift in Sources */,
 				CAE1A89D1F385FEF00785BEF /* AlbumsTableViewController.swift in Sources */,
 				CAE1A8991F3854DF00785BEF /* FBAlbum.swift in Sources */,
+				CAE1A8A61F3AEF4700785BEF /* ParseData.swift in Sources */,
 				CAE1A8A21F38CD3C00785BEF /* AlbumCell.swift in Sources */,
 				CA727E2A1F345B4600660597 /* LoginViewController.swift in Sources */,
 				CA727E281F345B4600660597 /* AppDelegate.swift in Sources */,
-				CAE1A89B1F3855F600785BEF /* GlobalVariables.swift in Sources */,
 				CAE1A89F1F38C04100785BEF /* PhotosTableViewController.swift in Sources */,
 				CAE1A8A41F38D06500785BEF /* CurrentPhotoViewController.swift in Sources */,
 			);

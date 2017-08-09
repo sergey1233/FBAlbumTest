@@ -4,24 +4,11 @@ import AlamofireImage
 
 class AlbumsTableViewController: UITableViewController {
 
-    let albums = GlobalVariables.sharedInstance.albums
+    var albums: [FBAlbum] = []
     var albumData: [String:UIImage] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        for album in albums {
-            var coverPhoto: UIImage = UIImage()
-            let size = CGSize(width: 60.0, height: 60.0)
-            
-            Alamofire.request(album.coverPhoto.urlString).responseImage { response in
-                if let imageResponse = response.result.value {
-                    coverPhoto = imageResponse.af_imageAspectScaled(toFill: size)
-                    self.albumData[album.id] = coverPhoto
-                    self.tableView.reloadData()
-                }
-            }
-        }
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -40,10 +27,26 @@ class AlbumsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "albumCell") as! AlbumCell!
         let album = albums[(indexPath as NSIndexPath).row]
         
-        cell?.picture.image = albumData[album.id]
+        if cell?.picture.image == nil {
+            getCoverAlbumPhoto(cell: cell, album: album)
+        }
         cell?.title.text = album.name
 
         return cell!
+    }
+    
+    func getCoverAlbumPhoto(cell: AlbumCell?, album: FBAlbum) {
+        let size = CGSize(width: 60.0, height: 60.0)
+        
+        let url = album.coverPhoto.urlString
+        if !url.isEmpty {
+            Alamofire.request(url).responseImage { response in
+                if let imageResponse = response.result.value {
+                    cell?.picture.image = imageResponse.af_imageAspectScaled(toFill: size)
+                    cell?.setNeedsLayout()
+                }
+            }
+        }
     }
  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
